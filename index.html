@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Lucky Number</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1; user-scalable=no">
+    </head>
+    <body>
+        <div id="mainScrn" class="scrn" style="width: 100%; height: 100%; position: absolute; top: 0%; left: 0%">
+            <label id="result" style="position: absolute; left: 25%; width: 50%; top: 50px; background-color: lightgrey; text-align: center; border-radius: 50px;">Result</label>
+            <input type="number" placeholder="Minimum Value" id="minVal" style="position: absolute; left: 25%; width: 50%; top: 100px;">
+            <input type="number" placeholder="Maximum Value" id="maxVal" style="position: absolute; left: 25%; width: 50%; top: 150px;">
+            <button id="pickBtn" style="position: absolute; left: 37.5%; width: 25%; top: 200px;">Pick</button>
+            <label id="banCount" style="position: absolute; left: 37.5%; width: 25%; top: 275px; text-align: center;">0/0</label>
+            <button id="banList" style="position: absolute; left: 45%; width: 10%; top: 300px;">Ban List</button>
+        </div>
+        <div id="banScrn" class="scrn" style="width: 100%; height: 100%; position: absolute; top: 0%; left: 0%" hidden>
+            <textarea placeholder="Enter the numbers separated by commas (,)" id="banListHolder" style="resize: none; width: 100%; height: 90%; position: absolute; scroll-behavior: smooth; overflow: auto; overflow-wrap: break-word;"></textarea>
+            <div style="position: absolute; left: 5%; top: 90%;">
+                <button id="banListBack">Back</button>
+                <button id="banListSave">Save</button>
+                <button id="banListLoad">Load</button>
+                <button id="banListDelete">Delete</button>
+            </div>
+        </div>
+    </body>
+    <script src="code.js"></script>
+</html>
